@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,11 +15,11 @@ body{
     background-color: #e2ecb9;
 }
 
-.shahrukh{
+.shahrukh {
     margin-bottom: 20px;
 }
 
-form{
+form {
     border: 2px solid black;
     width: 50%;
     padding: 2%;
@@ -27,52 +27,85 @@ form{
     background-color: #2eb9db;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
 }
 
-.label{
+.label {
     font-size: 18px;
     margin-bottom: 8px;
 }
 
-.input{
+.input {
     font-size: 17px;
     padding: 8px;
     border-radius: 8px;
     border: 1px solid rgb(8, 7, 7);
     outline: none;
-
-    &:focus{
-     border: 1px solid blue;
-    }
 }
 
-.mb-20{
+.input:focus {
+    border: 1px solid blue;
+}
+
+.mb-20 {
     margin-bottom: 20px;
 }
 
-.submit{
+.submit {
     font-size: 18px;
     padding: 12px;
     border-radius: 6px;
     width: 50%;
-    &:hover{
-        background-color: rgb(28, 163, 226);
-        color: white;
-        
-    }
-
-    &:active{
-        transform: scale(0.99);
-    }
+    cursor: pointer;
 }
 
-.btnDiv{
+.submit:hover {
+    background-color: rgb(28, 163, 226);
+    color: white;
+}
+
+.submit:active {
+    transform: scale(0.99);
+}
+
+.btnDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 5%;
+    }
+
+    form {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .input, .submit {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .shahrukh {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    form {
+        width: 70%;
+    }
+
+    .input, .submit {
+        width: 80%;
+    }
 }

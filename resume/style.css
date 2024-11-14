@@ -51,14 +51,14 @@ header img {
 .content {
     width: 100%;
     display: flex;
+    flex-wrap: wrap; /* Added to allow wrapping for better responsiveness */
 }
 
 .content aside {
     width: 30%;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding: 30px 15px;
     background-color: #011824;
+    margin-bottom: 20px; /* Adjusted for better mobile spacing */
 }
 
 .heading {
@@ -112,7 +112,7 @@ header img {
 
 .mainContent {
     width: 70%;
-    padding-left: 50px;
+    padding: 15px 30px;
     background: #e0ca77;
 }
 
@@ -179,7 +179,7 @@ header img {
     display: none;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 768px) {
     .resumeDiv {
         width: 90%;
@@ -205,15 +205,19 @@ header img {
     .content aside,
     .mainContent {
         width: 100%;
-        padding-left: 15px;
+        padding: 10px 15px;
     }
 
     .mainContent {
-        padding-left: 0;
+        padding: 15px;
     }
 
     .experience {
         margin-bottom: 40px;
+    }
+
+    .btnDiv {
+        flex-direction: column;
     }
 }
 
@@ -230,12 +234,17 @@ header img {
 
     .content aside,
     .mainContent {
-        padding-left: 10px;
+        padding: 10px;
     }
 
     .skill ul,
     .experience ul {
         margin-left: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
