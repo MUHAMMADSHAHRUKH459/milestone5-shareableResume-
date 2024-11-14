@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resumeDiv">
+        <header>
+           <div>
+         <h1 class="white"><span id="resName"></span></h1>
+         <p class="white"><span id="resDesig"></span></p>
+           </div> 
+           <img id="resImg" src="" alt="shahrukh">
+        </header>
+        <div class="content">
+            <aside>
+                <section id="conct" class="contact">
+                    <h2>Contact Details</h2>
+                    <p class="heading"><strong>Phone: No</strong></p>
+                    <p class="heading2"><span id="resPhone"></span></p>
+                    <br>
+                    <p class="heading"><strong>Email</strong></p>
+                    <p class="heading2"><span id="resEmail"></span></p>
+                    <br>
+                    <p class="heading"><strong>Date Of Birth</strong></p>
+                    <p class="heading2"><span id="resDOB"></span></p>
+                    <br>
+                    <p class="heading"><strong>Address</strong></p>
+                    <p class="heading2"><span id="resAdd"></span></p>
+                </section>
+                <section id="educ" class="education">
+                    <h2>Education</h2>
+                    <p class="heading2"><span id="resPass"></span></p>
+                    <p class="heading1"><strong><span id="resDeg"></span></strong></p>
+                    <p class="heading2"><span id="resInst"></span></p>
+                    <br>
+                    <p class="heading2"><span id="resPass1"></span></p>
+                    <p class="heading1"><strong><span id="resDeg1"></span></strong></p>
+                    <p class="heading2"><span id="resInst1"></span></p>
+                    <br>
+                    <p class="heading2"><span id="resPass2"></span></p>
+                    <p class="heading2"><strong><span id="resDeg2"></span></strong></p>
+                    <p class="heading2"><span id="resInst2"></span></p>
+                </section>
+                <section id="skills" class="skill">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li><span id="resSkill1"></span></li>
+                        <li><span id="resSkill2"></span></li>
+                        <li><span id="resSkill3"></span></li>
+                        <li><span id="resSkill4"></span></li>
+                        <li ><span id="resSkill5"></span></li>
+                        <li><span id="resSkill6"></span></li>
+                        <li><span id="resSkill7"></span></li>
+                        <li><span id="resSkill8"></span></li>
+                    </ul>
+                </section>
+                <section id="lang" class="language">
+                    <h2>Language</h2>
+                    <p><span id="resLang"></span></p>
+                    <p><span id="resLang1"></span></p>
+                    <p><span id="resLang2"></span></p>
+                </section>
+            </aside>
+            <main class="mainContent">
+                <section id="experience" class="workExperience">
+                    <h2>Work Experience (First)</h2>
+                    <div class="experience">
+                    <p><span id="resStyear"></span> - <span id="resEndyear"></span></p>
+                    
+                    <p class="colorh"><strong><span id="resCompany"></span></strong></p>
+                    <p><span id="resJobTitle"></span></p>             
+                </div>
+
+                <div class="experience">
+                    <h2>Work Experience (Second)</h2>
+                    <p><span id="resStyear1"></span> - <span id="resEndyear1"></span></p>
+                    <p class="colorh"><strong><span id="resCompany1"></span></strong></p>
+                    <p><span id="resJobTitle1"></span></p>              
+                </div>
+
+                <section id="ref" class="reference">
+                    <h2>Reference</h2>
+                    <p>Accessible upon request</p>
+                </section>
+                <section id="mylinks" class="links">
+                    <h2>Social Links</h2>
+                    <p class="colorh">Github: <a id="resLink" href=""></a></p>
+                    <p class="colorh">Linkdin : <a id="resLink1" href=""></a></p>
+                    
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <div class="btnDiv">
+        <button id="print_btn" class="btn">Print</button>
+        <button id="edit_btn" class="btn">Edit Resume</button>
+        <a id="anc" href=""><button id="share_btn" class="btn">Shareable Link</button></a>
+        <button id="copy_btn" class="btn">Copy URL</button>
+    </div>
+
+    <script src="static.js"></script>
+</body>
+</html>
